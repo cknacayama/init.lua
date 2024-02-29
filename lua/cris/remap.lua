@@ -23,13 +23,17 @@ vim.keymap.set('n', '<leader><leader>', vim.cmd.so)
 vim.keymap.set('x', '<leader>p', [['_dP]])
 
 -- next greatest remap ever : asbjornHaland
-vim.keymap.set({ 'n', 'v' }, '<leader>y', [['+y]])
-vim.keymap.set('n', '<leader>Y', [['+Y]])
-vim.keymap.set('n', '<leader>v', [['+p]])
+vim.keymap.set({ 'n', 'v' }, '<leader>y', [["+y]])
+vim.keymap.set('n', '<leader>Y', [["+Y]])
+vim.keymap.set('n', '<leader>v', [["+p]])
 
 vim.keymap.set('n', '<leader>cd', [[:Copilot disable<CR>]])
 vim.keymap.set('n', '<leader>ce', [[:Copilot enable<CR>]])
 
-vim.keymap.set('n', '<leader>va', [[ggVG]])
+vim.keymap.set('n', '<leader>a', [[ggVG]])
+
+-- copy whole file to clipboard
+vim.keymap.set('n', '<leader>ca', [[ggVG"+y]])
+
 
 vim.cmd([[autocmd BufWritePre * lua vim.lsp.buf.format()]])
