@@ -46,3 +46,5 @@ vim.filetype.add({
         ll = 'llvm',
     }
 })
+
+vim.g.copilot_no_tab_map = true
