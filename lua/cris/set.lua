@@ -44,6 +44,8 @@ vim.filetype.add({
         i = 'c',
         mips = 'mips',
         ll = 'llvm',
+        cl = 'cool',
+        pro = 'prolog'
     }
 })
 

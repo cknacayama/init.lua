@@ -18,7 +18,7 @@ return require('packer').startup(function(use)
     use('nvim-treesitter/playground')
     use({
         'VonHeikemen/lsp-zero.nvim',
-        branch = 'v3.x',
+        branch = 'v4.x',
         requires = {
             -- LSP Support
             { 'neovim/nvim-lspconfig' },             -- Required
@@ -31,11 +31,6 @@ return require('packer').startup(function(use)
             { 'L3MON4D3/LuaSnip' },     -- Required
         },
     })
-    use({
-        'ThePrimeagen/harpoon',
-        branch = 'harpoon2',
-        requires = { { 'nvim-lua/plenary.nvim' } }
-    })
-    use('github/copilot.vim')
     use('echasnovski/mini.statusline')
+    -- install without yarn or npm
 end)

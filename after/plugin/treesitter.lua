@@ -1,6 +1,6 @@
 require('nvim-treesitter.configs').setup({
     -- A list of parser names, or 'all' (the five listed parsers should always be installed)
-    ensure_installed = { 'c', 'lua', 'vim', 'vimdoc', 'query', 'rust', 'ken' },
+    ensure_installed = { 'c', 'lua', 'vim', 'vimdoc', 'query', 'rust' },
 
     -- Install parsers synchronously (only applied to `ensure_installed`)
     sync_install = false,
@@ -29,20 +29,3 @@ require('nvim-treesitter.configs').setup({
         additional_vim_regex_highlighting = false,
     },
 })
-
-local parser_config = require('nvim-treesitter.parsers').get_parser_configs()
-
-parser_config.ken = {
-    install_info = {
-        url = '~/work/tree-sitter-ken', -- local path or git repo
-        files = { 'src/parser.c' },     -- note that some parsers also require src/scanner.c or src/scanner.cc
-    },
-    filetype = 'ken',
-}
-parser_config.mips = {
-    install_info = {
-        url = '~/work/tree-sitter-mips', -- local path or git repo
-        files = { 'src/parser.c' },      -- note that some parsers also require src/scanner.c or src/scanner.cc
-    },
-    filetype = 'mips',
-}
