@@ -45,8 +45,9 @@ vim.filetype.add({
         mips = 'mips',
         ll = 'llvm',
         cl = 'cool',
-        pro = 'prolog'
+        pro = 'prolog',
+        vert = 'glsl',
+        geom = 'glsl',
+        frag = 'glsl'
     }
 })
-
-vim.g.copilot_no_tab_map = true

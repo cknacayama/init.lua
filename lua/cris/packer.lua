@@ -32,5 +32,4 @@ return require('packer').startup(function(use)
         },
     })
     use('echasnovski/mini.statusline')
-    -- install without yarn or npm
 end)

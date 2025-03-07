@@ -62,8 +62,6 @@ lspconfig.clangd.setup({
     cmd = { "clangd-21", "--header-insertion=never" }
 })
 lspconfig.rust_analyzer.setup({})
-lspconfig.hls.setup({})
-lspconfig.ocamllsp.setup({})
 
 vim.diagnostic.config({
     virtual_text = true,
